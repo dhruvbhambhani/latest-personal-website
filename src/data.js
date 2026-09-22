@@ -8,14 +8,29 @@ export const profile = {
 
 export const experience = [
   {
-    role: "R&D Software Engineering Intern",
-    company: "Powell Industries · Houston, TX",
+    company: "Powell Industries",
+    location: "Houston, TX",
     period: "May 2026 – Present",
     monogram: "PI",
     logo: "/powell-logo.png",
-    description:
-      "Prototyped a local RAG pipeline (LangChain, Ollama Llama 3, ChromaDB) across 500+ technical docs, then productionized it in the Snowflake ecosystem with Cortex Search and product-line AI agents — 200+ queries/day at 95% accuracy. Demoed 8 weeks ahead of schedule with a custom Streamlit front-end, preserving 75+ years of institutional knowledge.",
-    tags: ["LangChain", "Ollama", "ChromaDB", "Snowflake", "RAG", "Streamlit"],
+    roles: [
+      {
+        role: "AI Engineer, Project Lead · Remote",
+        period: "Aug 2026 – Present",
+        description:
+          "Spearheading an AI defeaturing pipeline that automates CAD-to-simulation transfer from Autodesk Inventor to COMSOL — scoped and greenlit directly with the VP of R&D and a business-unit director. Authored the financial analysis and product management plan that secured project funding, defining scope, roadmap, and ROI to align R&D leadership with business-unit stakeholders.",
+        tags: ["AI Automation", "Autodesk Inventor", "COMSOL", "CAD", "Product Strategy"],
+      },
+      {
+        role: "R&D Software Engineering Intern",
+        period: "May 2026 – Aug 2026",
+        bullets: [
+          "Productionized a multi AI-agent RAG pipeline (5 product-line agents) with proper governance, data security, and agent monitoring, preserving 75 years of institutional knowledge.",
+          "Processed 200+ queries a day across 50+ onboarded R&D engineers, managers, directors, and VPs.",
+        ],
+        tags: ["LangChain", "Ollama", "ChromaDB", "Snowflake", "RAG", "Streamlit"],
+      },
+    ],
   },
   {
     role: "Lead Applied AI Researcher",
@@ -36,16 +51,6 @@ export const experience = [
     description:
       "Co-authoring an NSF-funded ($500K) research paper on interpretable ML for mechanical engineering design rules — extending a 1D interpretability framework to 2D interaction effects with a PS-Tree symbolic regression pipeline decoding pairwise feature interactions from an energy-based model predicting UTS.",
     tags: ["Interpretable ML", "Symbolic Regression", "PS-Tree", "Python"],
-  },
-  {
-    role: "Web Developer & Robotics Engineer",
-    company: "TURTLE Robotics, Texas A&M",
-    period: "Aug 2025 – Present",
-    monogram: "TR",
-    logo: "/turtle-logo.png",
-    description:
-      "Full-stack development for a 350+ member robotics organization — Supabase-backed member database and a fine-tuned Gemini onboarding chatbot (+40% project engagement). Built an ESP32 robot with wireless joystick input, PWM motor control, and a servo-actuated claw.",
-    tags: ["React", "Supabase", "Gemini LLM", "ESP32", "C++"],
   },
   {
     role: "Software Engineering Intern",
@@ -90,6 +95,29 @@ export const projects = [
 ]
 
 export const volunteering = [
+  {
+    company: "TURTLE Robotics, Texas A&M",
+    location: "College Station, TX · On-site",
+    period: "Nov 2025 – Present",
+    monogram: "TR",
+    logo: "/turtle-logo.png",
+    roles: [
+      {
+        role: "Software Engineer / Web Developer",
+        period: "Jan 2026 – Present",
+        description:
+          "EDEN — building AI intelligent humanoid robots.",
+        tags: ["Humanoid Robotics", "Applied AI"],
+      },
+      {
+        role: "Web Development Committee",
+        period: "Nov 2025 – May 2026",
+        description:
+          "Developed and maintained the TURTLE website for a 500+ member robotics organization.",
+        tags: ["React", "Supabase", "Gemini LLM"],
+      },
+    ],
+  },
   {
     role: "Web Developer",
     company: "Aggie Coding Club, Texas A&M",

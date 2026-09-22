@@ -83,6 +83,30 @@ function Hero() {
   )
 }
 
+function XpDetail({ item }) {
+  return item.bullets ? (
+    <ul className="xp-bullets">
+      {item.bullets.map((b) => (
+        <li key={b}>{b}</li>
+      ))}
+    </ul>
+  ) : (
+    <p className="xp-desc">{item.description}</p>
+  )
+}
+
+function Pills({ tags }) {
+  return (
+    <div className="pills">
+      {tags.map((tag) => (
+        <span className="pill" key={tag}>
+          {tag}
+        </span>
+      ))}
+    </div>
+  )
+}
+
 function XpItem({ xp }) {
   return (
     <article className="xp-item">
@@ -92,19 +116,30 @@ function XpItem({ xp }) {
           : xp.monogram}
       </span>
       <div>
-        <h3 className="xp-role">{xp.role}</h3>
-        <p className="xp-company">{xp.company}</p>
+        <h3 className="xp-role">{xp.roles ? xp.company : xp.role}</h3>
+        <p className="xp-company">{xp.roles ? xp.location : xp.company}</p>
       </div>
       <span className="xp-period">{xp.period}</span>
       <div className="xp-body">
-        <p className="xp-desc">{xp.description}</p>
-        <div className="pills">
-          {xp.tags.map((tag) => (
-            <span className="pill" key={tag}>
-              {tag}
-            </span>
-          ))}
-        </div>
+        {xp.roles ? (
+          <ol className="xp-roles">
+            {xp.roles.map((r) => (
+              <li className="xp-sub" key={r.role}>
+                <div className="xp-sub-head">
+                  <h4 className="xp-sub-role">{r.role}</h4>
+                  <span className="xp-period">{r.period}</span>
+                </div>
+                <XpDetail item={r} />
+                <Pills tags={r.tags} />
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <>
+            <XpDetail item={xp} />
+            <Pills tags={xp.tags} />
+          </>
+        )}
         {xp.link && (
           <a className="xp-link" href={xp.link.href} target="_blank" rel="noreferrer">
             <span className="xp-link-icon">
@@ -128,7 +163,7 @@ function Experience() {
       <h2 className="section-title">Experience</h2>
       <div>
         {experience.map((xp) => (
-          <XpItem xp={xp} key={xp.role + xp.company} />
+          <XpItem xp={xp} key={(xp.role ?? "") + xp.company} />
         ))}
       </div>
     </section>
@@ -141,7 +176,7 @@ function Volunteering() {
       <h2 className="section-title">Volunteering</h2>
       <div>
         {volunteering.map((xp) => (
-          <XpItem xp={xp} key={xp.role + xp.company} />
+          <XpItem xp={xp} key={(xp.role ?? "") + xp.company} />
         ))}
       </div>
     </section>
