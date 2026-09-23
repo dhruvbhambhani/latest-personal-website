@@ -8,6 +8,15 @@ export const profile = {
 
 export const experience = [
   {
+    role: "Software Engineering Intern · Incoming",
+    company: "Bank of America",
+    period: "Summer 2027",
+    monogram: "BA",
+    logo: "/boa-logo.png",
+    description: "Incoming software engineering intern for Summer 2027.",
+    tags: ["Software Engineering"],
+  },
+  {
     company: "Powell Industries",
     location: "Houston, TX",
     period: "May 2026 – Present",
