@@ -71,9 +71,9 @@ export const experience = [
     period: "May 2024 – Aug 2024",
     monogram: "JBB",
     bullets: [
-      "Architected a multi-tenant web ecosystem of 5 distributed full-stack apps centralizing operations for a 500+ unit real estate portfolio.",
       "Architected a document-synthesis pipeline compiling legally-compliant lease agreements.",
       "Built a multi-agent framework for maintenance ticket dispatch based off severity.",
+      "Developed a multi-tenant web ecosystem of 5 full-stack apps centralizing operations for a 500+ unit real estate portfolio.",
     ],
     tags: ["Next.js", "Node.js", "Supabase", "Flask", "LangChain", "Redis"],
     link: {
