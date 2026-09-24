@@ -54,6 +54,11 @@ export const experience = [
       "Spearheaded end-to-end development of Open-Claw (agentic framework) + ROS layer for multi-robot coordination.",
     ],
     tags: ["NVIDIA Nemotron", "OpenClaw", "ROS", "micro-ROS", "LLM Security"],
+    link: {
+      label: "SUCCESS Lab",
+      sub: "success.cse.tamu.edu",
+      href: "https://success.cse.tamu.edu/",
+    },
   },
   {
     role: "Computational AI Researcher",
@@ -64,6 +69,11 @@ export const experience = [
     description:
       "Co-authoring an NSF-funded ($500K) research paper on interpretable ML for mechanical engineering design rules.",
     tags: ["Interpretable ML", "Symbolic Regression", "PS-Tree", "Python"],
+    link: {
+      label: "DIGIT Lab",
+      sub: "digitlab23.github.io",
+      href: "https://digitlab23.github.io/",
+    },
   },
   {
     role: "Software Engineering Intern",
