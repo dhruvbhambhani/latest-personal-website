@@ -14,7 +14,7 @@ export const experience = [
     monogram: "BA",
     logo: "/boa-logo.png",
     description: "Incoming (Summer 2027)",
-    tags: ["Software Engineering"],
+    tags: ["Backend"],
   },
   {
     company: "Powell Industries",
