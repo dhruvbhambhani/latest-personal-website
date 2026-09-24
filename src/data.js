@@ -8,12 +8,12 @@ export const profile = {
 
 export const experience = [
   {
-    role: "Software Engineering Intern · Incoming",
+    role: "Incoming Software Engineering Intern",
     company: "Bank of America",
     period: "Summer 2027",
     monogram: "BA",
     logo: "/boa-logo.png",
-    description: "Incoming software engineering intern for Summer 2027.",
+    description: "Incoming (Summer 2027)",
     tags: ["Software Engineering"],
   },
   {
@@ -26,8 +26,10 @@ export const experience = [
       {
         role: "AI Engineer, Project Lead · Remote",
         period: "Aug 2026 – Present",
-        description:
-          "Spearheading an AI defeaturing pipeline that automates CAD-to-simulation transfer from Autodesk Inventor to COMSOL — scoped and greenlit directly with the VP of R&D and a business-unit director. Authored the financial analysis and product management plan that secured project funding, defining scope, roadmap, and ROI to align R&D leadership with business-unit stakeholders.",
+        bullets: [
+          "Leading development of an AI pipeline that defeatures Autodesk Inventor CAD models for COMSOL simulation.",
+          "Led the financial analysis, product development, and proposals to VPs, CFO, and senior leadership.",
+        ],
         tags: ["AI Automation", "Autodesk Inventor", "COMSOL", "CAD", "Product Strategy"],
       },
       {
@@ -47,8 +49,10 @@ export const experience = [
     period: "Apr 2026 – Present",
     monogram: "SL",
     logo: "/tamu-logo.png",
-    description:
-      "Researching a multi-tiered LLM agentic architecture integrating NVIDIA Nemotron with the OpenClaw framework for multi-robot coordination across ROS and ESP32 micro-ROS nodes. Architected a security layer defending against prompt injection, context manipulation, and cross-layer exploitation in physical robotics environments, based on a 470-advisory taxonomy.",
+    bullets: [
+      "Currently leading research in embodied AI and AI security in physical environments.",
+      "Spearheaded end-to-end development of Open-Claw (agentic framework) + ROS layer for multi-robot coordination.",
+    ],
     tags: ["NVIDIA Nemotron", "OpenClaw", "ROS", "micro-ROS", "LLM Security"],
   },
   {
@@ -58,14 +62,14 @@ export const experience = [
     monogram: "DL",
     logo: "/tamu-logo.png",
     description:
-      "Co-authoring an NSF-funded ($500K) research paper on interpretable ML for mechanical engineering design rules — extending a 1D interpretability framework to 2D interaction effects with a PS-Tree symbolic regression pipeline decoding pairwise feature interactions from an energy-based model predicting UTS.",
+      "Co-authoring an NSF-funded ($500K) research paper on interpretable ML for mechanical engineering design rules.",
     tags: ["Interpretable ML", "Symbolic Regression", "PS-Tree", "Python"],
   },
   {
     role: "Software Engineering Intern",
     company: "JBB Asset Management LLC · Houston, TX",
     period: "May 2024 – Aug 2024",
-    monogram: "JB",
+    monogram: "JBB",
     description:
       "Architected a multi-tenant web ecosystem of 5 distributed full-stack apps (Next.js, Node.js, Supabase PostgreSQL) centralizing operations for a 500+ unit real estate portfolio. Built a document-synthesis pipeline compiling legally-compliant lease agreements and a LangChain + Redis multi-agent framework for maintenance ticket dispatch.",
     tags: ["Next.js", "Node.js", "Supabase", "Flask", "LangChain", "Redis"],
