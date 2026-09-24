@@ -70,8 +70,10 @@ export const experience = [
     company: "JBB Asset Management LLC · Houston, TX",
     period: "May 2024 – Aug 2024",
     monogram: "JBB",
-    description:
-      "Architected a multi-tenant web ecosystem of 5 distributed full-stack apps (Next.js, Node.js, Supabase PostgreSQL) centralizing operations for a 500+ unit real estate portfolio. Built a document-synthesis pipeline compiling legally-compliant lease agreements and a LangChain + Redis multi-agent framework for maintenance ticket dispatch.",
+    bullets: [
+      "Architected a document-synthesis pipeline compiling legally-compliant lease agreements.",
+      "Built a multi-agent framework for maintenance ticket dispatch based off severity.",
+    ],
     tags: ["Next.js", "Node.js", "Supabase", "Flask", "LangChain", "Redis"],
     link: {
       label: "JBB Asset Management",
