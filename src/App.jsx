@@ -68,7 +68,7 @@ function Hero() {
       <div className="hero-now">
         <BirdIcon size={18} />
         <span>
-          Currently building agentic RAG systems @ Powell :)
+          Currently AI @ Powell :)
         </span>
       </div>
       <p className="hero-text">
