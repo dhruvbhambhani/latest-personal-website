@@ -74,7 +74,9 @@ function Hero() {
       <p className="hero-text">
         I love taking ideas from zero to <strong>secure, end-to-end AI solutions</strong> for{" "}
         <strong>consumers and enterprises</strong>.{" "}
-        <a href={`mailto:${profile.email}`}>Let's chat!</a>
+        <a href={profile.linkedin} target="_blank" rel="noreferrer">
+          Let's chat!
+        </a>
       </p>
       <p className="hero-text">
         Artificial Intelligence @ Texas A&M (Dean's List), and licensed in Real Estate.
