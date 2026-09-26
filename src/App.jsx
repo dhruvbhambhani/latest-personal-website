@@ -232,6 +232,10 @@ function Footer() {
             <MailIcon />
           </a>
         </div>
+        <a className="footer-resume" href={profile.resume} download>
+          <ArrowIcon size={13} />
+          <span>Resume</span>
+        </a>
       </div>
     </footer>
   )

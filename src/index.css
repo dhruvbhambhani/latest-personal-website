@@ -411,6 +411,24 @@ main {
   color: var(--text-muted);
 }
 
+.footer-resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.footer-resume:hover {
+  text-decoration: none;
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
 /* ---------- Projects ---------- */
 .post-list {
   display: flex;
