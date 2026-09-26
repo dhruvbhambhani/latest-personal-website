@@ -68,7 +68,7 @@ function Hero() {
       <div className="hero-now">
         <BirdIcon size={18} />
         <span>
-          Currently AI @ Powell :)
+          Currently AI @ Powell &amp; acquiring Real Estate :)
         </span>
       </div>
       <p className="hero-text">
