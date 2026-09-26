@@ -72,8 +72,8 @@ function Hero() {
         </span>
       </div>
       <p className="hero-text">
-        I love building <strong>applied AI/ML projects</strong> in prod environments and acquiring{" "}
-        <strong>real estate</strong>.{" "}
+        I love taking ideas from zero to <strong>secure, end-to-end AI solutions</strong> for{" "}
+        <strong>consumers and enterprises</strong>.{" "}
         <a href={`mailto:${profile.email}`}>Let's chat!</a>
       </p>
       <p className="hero-text">
