@@ -484,11 +484,6 @@ main {
   background: var(--pill-bg);
 }
 
-.footer-updated {
-  color: var(--text-muted);
-  font-size: 14px;
-}
-
 /* ---------- Responsive ---------- */
 @media (max-width: 560px) {
   .hero-title {

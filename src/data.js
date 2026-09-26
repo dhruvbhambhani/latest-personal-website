@@ -3,7 +3,6 @@ export const profile = {
   email: "dhruvbhambhani@tamu.edu",
   github: "https://github.com/dhruvbhambhani",
   linkedin: "https://www.linkedin.com/in/dhruvbhambhani05",
-  updated: "07/06/2026",
 }
 
 export const experience = [

@@ -232,7 +232,6 @@ function Footer() {
             <MailIcon />
           </a>
         </div>
-        <span className="footer-updated">updated {profile.updated}</span>
       </div>
     </footer>
   )
