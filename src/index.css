@@ -554,7 +554,7 @@ main {
   }
 
   .xp-body {
-    grid-column: 1 / 3;
+    grid-column: 2;
   }
 }
 
