@@ -162,6 +162,7 @@ export const volunteering = [
     company: "Aggie Coding Club, Texas A&M",
     period: "Jan 2025 – May 2025",
     monogram: "AC",
+    logo: "/acc-logo.png",
     description:
       "Full-stack development for the NPC Room project — React frontend with a Java, Spring Boot, and MongoDB backend.",
     tags: ["React", "Java", "Spring Boot", "MongoDB"],
@@ -171,6 +172,7 @@ export const volunteering = [
     company: "Aggie Data Science Club, Texas A&M",
     period: "Jan 2025 – May 2025",
     monogram: "DS",
+    logo: "/adsc-logo.png",
     description:
       "Cleaned data and simulated operation efficiency using Random Forest, XGBoost, and KNN regression for the Chemical Plant Simulation & Automation project.",
     tags: ["Python", "Random Forest", "XGBoost", "ML"],
